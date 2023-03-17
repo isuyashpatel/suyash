@@ -9,6 +9,7 @@ import { SiLeetcode } from 'react-icons/si';
 import Image from 'next/image';
 import suyash from './api/hello/suyash.png';
 import React, { useState } from 'react';
+import Typewriter from 'typewriter-effect';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -49,8 +50,17 @@ export default function Home() {
               <h2 className='lg:text-5xl text-2xl dark:text-white py-2 text-teal-600 font-medium'>
                 Suyash Patel
               </h2>
-              <h3 className='lg:text-2xl text-gray-800 dark:text-gray-200 text-lg py-2'>
-                Full Stack Devlopers
+              <h3 className='lg:text-2xl text-gray-800 dark:text-gray-200 text-lg py-2 w-screen'>
+                <Typewriter
+                  options={{
+                    strings: ['<h3>Full Stack Devlopers</h3>'],
+                    autoStart: true,
+                    loop: true,
+                    skipAddStyles: false,
+                    wrapperClassName: 'Typewriter__wrapper',
+                    cursorClassName: 'Typewriter__cursor',
+                  }}
+                />
               </h3>
               <p className='lg:text-lg text-sm py-5 leading-8 text-gray-800 dark:text-gray-200'>
                 I am final year undergraduate student and a Developer with
