@@ -56,7 +56,7 @@ export default function Home() {
               <h3 className='lg:text-2xl text-gray-800 dark:text-gray-200 text-lg py-2 w-screen'>
                 <Typewriter
                   options={{
-                    strings: ['<h3>Full Stack Devlopers</h3>'],
+                    strings: ['<h3>Full Stack Developers</h3>'],
                     autoStart: true,
                     loop: true,
                     skipAddStyles: false,
