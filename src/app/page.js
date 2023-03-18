@@ -65,7 +65,7 @@ export default function Home() {
                   }}
                 />
               </h3>
-              <p className='lg:text-lg text-sm py-5 px-2 leading-8 text-gray-800 dark:text-gray-200'>
+              <p className='lg:text-lg text-sm py-5 md:px-2 leading-8 text-gray-800 dark:text-gray-200'>
                 I am final year undergraduate student and a Developer with
                 strong passion and dedication for self - improvement. I love to
                 learn new technolgies and to create new stuffs related to them.
