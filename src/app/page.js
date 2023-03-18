@@ -17,7 +17,7 @@ export default function Home() {
     <div className={darkMode ? 'dark' : ''}>
       <main className='bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 overflow-hidden'>
         <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between'>
+          <nav className='py-10 mb-2 flex justify-between'>
             <h1 className='text-xl font-burtons tracking-widest dark:text-white'>
               Suyash Patel
             </h1>
@@ -46,7 +46,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className='flex flex-col items-center'>
-            <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full lg:w-96 lg:h-96 h-48 w-48 relative mt-20 overflow-hidden'>
+            <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full lg:w-96 lg:h-96 h-48 w-48 relative mt-6 overflow-hidden'>
               <Image src={suyash} fill className='object-cover' alt='Profile' />
             </div>
             <div className='text-center p-10'>
@@ -65,7 +65,7 @@ export default function Home() {
                   }}
                 />
               </h3>
-              <p className='lg:text-lg text-sm py-5 leading-8 text-gray-800 dark:text-gray-200'>
+              <p className='lg:text-lg text-sm py-5 px-2 leading-8 text-gray-800 dark:text-gray-200'>
                 I am final year undergraduate student and a Developer with
                 strong passion and dedication for self - improvement. I love to
                 learn new technolgies and to create new stuffs related to them.
