@@ -15,7 +15,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <main className='bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40'>
+      <main className='bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 overflow-hidden'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons tracking-widest dark:text-white'>
@@ -46,6 +46,9 @@ export default function Home() {
             </ul>
           </nav>
           <div className='flex flex-col items-center'>
+            <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full lg:w-96 lg:h-96 h-48 w-48 relative mt-20 overflow-hidden'>
+              <Image src={suyash} fill className='object-cover' alt='Profile' />
+            </div>
             <div className='text-center p-10'>
               <h2 className='lg:text-5xl text-2xl dark:text-white py-2 text-teal-600 font-medium'>
                 Suyash Patel
@@ -83,9 +86,6 @@ export default function Home() {
               <a href='https://twitter.com/isuyashpatel' target={'_blank'}>
                 <AiFillTwitterCircle />
               </a>
-            </div>
-            <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full lg:w-96 lg:h-96 h-48 w-48 relative mt-20 overflow-hidden'>
-              <Image src={suyash} fill className='object-cover' alt='Profile' />
             </div>
           </div>
         </section>
