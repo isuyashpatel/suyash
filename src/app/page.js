@@ -56,12 +56,12 @@ export default function Home() {
               <h3 className='lg:text-2xl text-gray-800 dark:text-gray-200 text-lg py-2 w-screen'>
                 <Typewriter
                   options={{
-                    strings: ['<h3>Full Stack Developers</h3>'],
+                    strings: [
+                      '<h3>Full Stack Developers</h3>',
+                      'Quick Learner',
+                    ],
                     autoStart: true,
                     loop: true,
-                    skipAddStyles: false,
-                    wrapperClassName: 'Typewriter__wrapper',
-                    cursorClassName: 'Typewriter__cursor',
                   }}
                 />
               </h3>
