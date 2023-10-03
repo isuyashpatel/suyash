@@ -1,18 +1,12 @@
 'use client';
-import { BsFillSunFill, BsFillMoonStarsFill } from 'react-icons/bs';
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillGithub,
-} from 'react-icons/ai';
-import { SiLeetcode } from 'react-icons/si';
 import Image from 'next/image';
 import suyash from './api/hello/suyash.png';
 import React, { Fragment, useCallback, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-import { options } from './particles-js';
+import { Navbar } from './component/nav';
+import { Social } from './component/social';
 
 export default function Home() {
   const particlesInit = useCallback(async engine => {
@@ -31,7 +25,6 @@ export default function Home() {
 
 
   //option theme
-
   const options = {
     fullScreen: true,
     background: {
@@ -113,34 +106,7 @@ export default function Home() {
       <div className={darkMode ? 'dark' : ''}>
         <main className='relative px-10 md:px-20 lg:px-40 overflow-hidden'>
         <section className='min-h-screen'>
-            <nav className='py-10 mb-2 flex justify-between'>
-              <h1 className='text-xl font-burtons tracking-widest dark:text-white'>
-              Suyash Patel
-            </h1>
-              <ul className='flex items-center'>
-              <li>
-                {darkMode ? (
-                  <BsFillSunFill
-                    onClick={() => setDarkMode(false)}
-                    className='cursor-pointer text-2xl dark:text-white'
-                  />
-                ) : (
-                  <BsFillMoonStarsFill
-                    onClick={() => setDarkMode(true)}
-                    className='cursor-pointer text-2xl'
-                  />
-                )}
-              </li>
-              <li>
-                <a
-                  target='_blank'
-                  className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
-                    href='https://drive.google.com/file/d/1rdLlj9_2Wrwa1yLJWIw5GDm9NKlIMBFz/view?usp=sharing'>
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
+            <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
             <div className='flex flex-col items-center'>
               <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full lg:w-96 lg:h-96 h-48 w-48 relative mt-6 overflow-hidden'>
               <Image src={suyash} fill className='object-cover' alt='Profile' />
@@ -165,22 +131,7 @@ export default function Home() {
                   I am Software Developer with strong passion and dedication for self - improvement. I love to
                 learn new technolgies and to create new stuffs related to them.
                 </h4>
-                <div className='lg:text-5xl text-2xl flex justify-center lg:gap-16 gap-10 text-gray-600 dark:text-gray-400'>
-                  <a href='https://github.com/isuyashpatel' target={'_blank'}>
-                <AiFillGithub />
-              </a>
-              <a href='https://leetcode.com/serpensortia/' target={'_blank'}>
-                <SiLeetcode />
-              </a>
-              <a
-                href='https://www.linkedin.com/in/suyash-patel-0b6199191/'
-                target={'_blank'}>
-                <AiFillLinkedin />
-              </a>{' '}
-              <a href='https://twitter.com/isuyashpatel' target={'_blank'}>
-                <AiFillTwitterCircle />
-              </a>
-            </div>
+                <Social />
               </div>
 
           </div>
