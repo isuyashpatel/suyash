@@ -12,7 +12,7 @@ const Index = () => {
         <Fragment>
             <Particlesjs />
             <div className={darkMode ? 'dark' : ''}>
-                <main className='relative px-10 md:px-20 lg:px-40 overflow-hidden'>
+                <main className='relative px-10 md:px-20 lg:px-40 overflow-x-hidden'>
                     <section className='min-h-screen'>
                         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
                         <About />
