@@ -1,4 +1,5 @@
 import { atom, selector } from "recoil";
+import { primaryColor, secondaryColor } from "../ThemeColor";
 
 export const themeState = atom({
     key: 'themeColor',
@@ -8,13 +9,13 @@ export const themeState = atom({
 export const backgroundColor = selector({
     key: 'backgroundColor',
     get: ({ get }) => {
-        return get(themeState) ? "#000" : "#fff";  //if the state is
+        return get(themeState) ? primaryColor : secondaryColor;  //if the state is
     }
 })
 
 export const constellation = selector({
     key: 'constellation',
     get: ({ get }) => {
-        return get(themeState) ? "#fff" : "#000";  //if the state is
+        return get(themeState) ? secondaryColor : primaryColor;  //if the state is
     }
 })
