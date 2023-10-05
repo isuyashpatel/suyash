@@ -5,8 +5,8 @@ const Social = () => {
     return (
         <div className='lg:text-5xl text-2xl flex justify-center lg:gap-16 gap-10 text-gray-600 dark:text-gray-400'>
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, x: 100 }}
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.8 }}
             >
                 <a href='https://github.com/isuyashpatel' target={'_blank'}>
@@ -14,8 +14,8 @@ const Social = () => {
                 </a>
             </motion.div>
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, x: 100 }}
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1 }}
             >
                 <a href='https://leetcode.com/serpensortia/' target={'_blank'}>
@@ -23,8 +23,8 @@ const Social = () => {
                 </a>
             </motion.div>
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, x: 100 }}
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.2 }}
             >
                 <a
@@ -34,8 +34,8 @@ const Social = () => {
                 </a>
             </motion.div>
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, x: 100 }}
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.4 }}
             >
                 <a href='https://twitter.com/isuyashpatel' target={'_blank'}>
