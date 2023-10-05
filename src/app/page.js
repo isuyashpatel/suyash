@@ -1,12 +1,13 @@
 'use client';
-import React, { Fragment } from 'react';
+import React from 'react';
 import Index from './component';
+import { RecoilRoot } from 'recoil';
 
 export default function Home() {
 
   return (
-    <Fragment>
+    <RecoilRoot>
       <Index />
-    </Fragment>
+    </RecoilRoot>
   );
 }
