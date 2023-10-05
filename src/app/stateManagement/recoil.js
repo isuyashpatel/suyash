@@ -1,5 +1,5 @@
 import { atom, selector } from "recoil";
-import { primaryColor, secondaryColor } from "../ThemeColor";
+import { primaryColor, secondaryColor } from "../themeColors";
 
 export const themeState = atom({
     key: 'themeColor',
