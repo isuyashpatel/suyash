@@ -9,11 +9,11 @@ export const Particlesjs = () => {
     const bgColor = useRecoilValue(backgroundColor);
     const asterisms = useRecoilValue(constellation);
 
-    const particlesInit = useCallback(async engine => {
-        await loadSlim(engine);
+    const particlesInit = useCallback(engine => {
+        loadSlim(engine);
     }, []);
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+    const particlesLoaded = useCallback(container => {
+        console.log(container);
     }, []);
 
 
