@@ -8,8 +8,9 @@ const About = () => {
     return (
         <div className='flex flex-col items-center'>
             <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full lg:w-96 lg:h-96 h-48 w-48 relative mt-6 overflow-hidden'>
-                <Image src={suyash} fill className='lg:w-96 lg:h-96 h-48 w-48 object-cover' alt='Profile' />
+                <Image src={suyash} alt='Profile' className='object-cover' fill quality={90} />
             </div>
+
             <div className='flex flex-col gap-y-6 text-center mt-10'>
                 <h2 className='lg:text-5xl text-2xl dark:text-white text-teal-600 font-medium'>
                     Suyash Patel

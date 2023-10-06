@@ -33,7 +33,7 @@ export const Particlesjs = () => {
                         value: bgColor,
                     },
                 },
-                fpsLimit: 180,
+                fpsLimit: 60,
                 interactivity: {
                     events: {
                         onClick: {
