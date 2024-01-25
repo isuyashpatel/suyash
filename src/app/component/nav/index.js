@@ -1,4 +1,5 @@
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs"
+import Wallet from "../wallet"
 
 export const Navbar = ({ darkMode, setDarkMode }) => {
     return (
@@ -21,12 +22,13 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
                     )}
                 </li>
                 <li>
-                    <a
+                    {/* <a
                         target='_blank'
                         className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
                         href='https://drive.google.com/file/d/1rdLlj9_2Wrwa1yLJWIw5GDm9NKlIMBFz/view?usp=sharing'>
                         Resume
-                    </a>
+                    </a> */}
+                    <Wallet/>
                 </li>
             </ul>
         </nav>
