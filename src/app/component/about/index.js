@@ -7,7 +7,7 @@ import suyash from '../../assets/suyash.png'
 const About = () => {
     return (
         <div className='flex flex-col items-center'>
-            <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full lg:w-96 lg:h-96 h-48 w-48 relative mt-6 overflow-hidden'>
+            <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full h-[13vw] w-[13vw] relative mt-6 overflow-hidden'>
                 <Image src={suyash} alt='Profile' className='object-cover' fill quality={90} />
             </div>
 
